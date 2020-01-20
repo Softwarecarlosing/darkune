@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-//clase
+
+
+
+//clase donde se crean procesos 
 class ContadorPage extends StatefulWidget{
 
   
@@ -21,7 +24,7 @@ class _ContadorPageState extends State<ContadorPage>{
 
   final TextStyle estiloTexto = new TextStyle(fontSize:25);
   
-  final int conteo = 10;
+  int _conteo = 10;
 
 
    @override 
@@ -47,7 +50,7 @@ class _ContadorPageState extends State<ContadorPage>{
            mainAxisAlignment: MainAxisAlignment.center,
            children: <Widget>[
               Text('Numero de clicks:', style: estiloTexto),
-              Text('$conteo', style: TextStyle (fontSize: 25)),
+              Text('$_conteo', style: TextStyle (fontSize: 25)),
            ],
          ),
 
@@ -56,11 +59,20 @@ class _ContadorPageState extends State<ContadorPage>{
      floatingActionButton: FloatingActionButton(
         
         child: Icon(Icons.add),
+
+        // evento al dar clic en el botton 
         onPressed: (){
 
         print('Hola Mundo!');
-        //conteo = conteo +1;
+        
+        // Se utiliza para notificar al marco que "los datos han cambiado"
 
+        setState(() {
+          
+        // variable que aumenta 
+        _conteo ++;
+
+        });
 
         }
 

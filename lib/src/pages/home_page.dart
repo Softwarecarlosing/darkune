@@ -50,9 +50,28 @@ class HomePage extends StatelessWidget{
         }
 
      ),
-
+     
  );
  
-}
+}// build
 
-}
+Widget _crearBotones() {
+
+   return Row(mainAxisAlignment: MainAxisAlignment.end,
+     
+     children: <Widget>[
+       FloatingActionButton( child: Icon(Icons.add_alarm), onPressed: null),
+       FloatingActionButton(child: Icon(Icons.add_alarm), onPressed: null),
+     ],
+      
+      
+   
+   );
+
+
+  }
+
+
+}// Home page
+
+
