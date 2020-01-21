@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 // importacion nosotros escribimos
-import 'src/home.dart';
+import 'src/pages/home.dart';
 
 
 
