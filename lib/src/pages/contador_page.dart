@@ -77,9 +77,22 @@ class _ContadorPageState extends State<ContadorPage>{
         }
 
      ),
-
+     floatingActionButton: _crearBotones()
  );
  
+}
+
+Widget _crearBotones(){
+  
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.end,
+    children: <Widget>[
+      FloatingActionButton( child: Icon(Icons.add_alarm), onPressed:null),
+      FloatingActionButton( child: Icon(Icons.add_alarm), onPressed:null)
+    
+  ],
+  );
+
 }
 
 }
