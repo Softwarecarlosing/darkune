@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 // importacion nosotros escribimos
-import 'src/app.dart';
+//import 'src/app.dart';
 
 
 
@@ -10,7 +10,7 @@ import 'src/app.dart';
 void main() {
   
   // correr aplicacion 
-  runApp(new MyApp());
+  runApp(new
 
 }
 
