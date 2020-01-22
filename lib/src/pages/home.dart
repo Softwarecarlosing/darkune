@@ -17,19 +17,24 @@ class Home extends StatelessWidget {
            accountName: Text(''),
            accountEmail: Text('Bienvenido al menu'),
            currentAccountPicture: CircleAvatar(
-             backgroundColor: Colors.blue,
+             backgroundColor: Colors.red,
              child: Text('Ifp', style: TextStyle(fontSize: 40.0))
            ),
          ),
+
+
+
          ListTile(
            title: Text('Contacto'),
+           leading: Icon(Icons.contact_phone),
            onTap: (){
              
            }, //Tap
          ),
          ListTile(
            
-           title: Text('Galeria'),
+           title: Text('Galeria de fotos'),
+           leading: Icon(Icons.photo_album),
            onTap: (){
 
            },
